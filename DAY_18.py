@@ -1,12 +1,12 @@
 import smtplib
 import ssl
 from email.message import EmailMessage
-sender_email = "meghanavaddi2402@gmail.com"
-password = "awaaevxocgrnhizb"
+sender_email = "your_email@gmail.com"
+password =  "your_app_password"
 receiver_mail = "vaddi1234YT@gmail.com"
 message = EmailMessage()
 message ["From"] =   "meghanavaddi2402@gmail.com"
-message ["To"] =   "vaddi1234YT@gmail.com"
+message ["To"] =   "recipient@example.com"
 message["Subject"] = "Welcome Mail"
 message.set_content(f"""
 Hello Meghana!!
