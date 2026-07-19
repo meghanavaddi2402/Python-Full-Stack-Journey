@@ -31,15 +31,20 @@ Attributes:
 - Attributes are the variables that belongs to an object or the class
     
 '''
-
-    
 class how:
-    def details(self, name, age):
-        self.name = name  #instance attribute
+    def __init__(self, name, age):
+        self.name = name
         self.age = age
-    def name(self):
+    def nam(self):
         print(self.name)
-s1_ = how()
-s1_.details('Meenakshi',21)
+s1 = how("Maggi",34)
+print(s1.nam())
 
-print(f"Name: {s1_.name}\nAge: {s1_.age}")
+class calc:
+    def add(self, num1, num2):
+        print(num1 + num2)
+    def sub(self, num1, num2):
+        print(num1 - num2)
+c = calc()
+c.add(2,90)
+c.sub(8, 9)
