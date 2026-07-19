@@ -1,5 +1,6 @@
 '''
 
+
                                         OOPS
                                         ----
 
@@ -21,7 +22,7 @@ Objects:
 - Object is a instance of the class
 
 class student:
-    std_name = 'Meenakshi' #Class attribute
+    std_name = 'Maggi' #Class attribute
 
 st_ = student()
 print(st_)
