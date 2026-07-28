@@ -1,14 +1,14 @@
 '''
 => MATPLOTLIB
-- matplotlib library is a pytjon library that provides functionality to charrts, graphs, bar graphs and data visulization
+- matplotlib library is a python library that provides functionality to charts, graphs, bar graphs and data visulization
 
 import matplotlib.pyplot as plt
 x = [10,20,30,40,50]
 y = [100,150,200,250,300]
 plt.plot(x,y)
-plt.title("urikey chesa netho pedda pani ledu le")
-plt.xlabel("idi nedi")
-plt.ylabel("idi nadi")
+plt.title("car sales")
+plt.xlabel("year")
+plt.ylabel("sales")
 plt.show()
 
 
@@ -70,9 +70,9 @@ plt.show()
 import matplotlib.pyplot as plt
 x = ['groceries','shopping','food','fees','rent']
 y = [17,9,23,40,30]
-plt.title("urikey chesa")
-x_lab = "idi nadi"
-y_lab = "idi_nedi"
+plt.title("expenditure")
+x_lab = "expenses"
+y_lab = "amount used"
 plt.figure(figsize=(6,8))
 plt.subplot(2,2,1)
 plt.plot(x,y)
