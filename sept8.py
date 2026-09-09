@@ -34,8 +34,8 @@ while True:
     try:
         weight = float(input("Enter weight in kgs: "))
         height = float(input("Enter height in mts: "))
-        if weight >= 0 or height >= 0:
-            break
+        if weight <= 0 or height <= 0:
+            raise ValueError("Weight and height must be positive values")
         name = input("Enter User Name: ")
         bmi = weight / height ** 2
         if bmi < 18.5:
