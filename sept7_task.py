@@ -20,7 +20,7 @@ print(f"Final mark removed using pop(): {removed_mark}")
 # Display final list and length
 print(f"Final marks list: {marks}")
 print(f"Number of marks: {len(marks)}\n")
-print('='*20"\n")
+print("="*20)
 
 
 
@@ -49,3 +49,97 @@ else:
 print(f"Smallest value: {min(numbers)}")
 print(f"Largest value: {max(numbers)}")
 print(f"Total: {sum(numbers)}")
+
+# Even and Odd Number Separator
+numbers = [10,15,20,25,30,35]
+# creating 2 empty lists
+even = []
+odd = []
+for num in numbers:
+    # Even condition
+    if num % 2 == 0:
+        even.append(num)#appending even numbers
+    #Odd condition
+    else:
+        odd.append(num)#appending odd numbers
+print(f"Even Numbers List:{even}")
+print(f"Even Numbers List:{odd}")
+# Slicing
+print(f"First three values: {numbers[:3]}")
+print(f"Last three values: {numbers[-3:]}")
+# Backup using copy
+copy_numbers = numbers.copy()
+# Empting original list
+cleared_list = numbers.clear()
+print(f"Back up  of the original list: {copy_numbers}")
+print(f"Original List:{numbers}")
+
+# Unique Name Manager
+names = ["Ashu","Rahul","Asha","Jhon","Rahul"]
+converted_list = set(names)
+#checking types
+#print(type(names))
+#print(type(converted_list))
+print(f"Original names: {converted_list}")
+# adding 
+converted_list.add("Meera")
+print(f"List after adding a name using add: {converted_list}")
+#updating
+converted_list.update(("Arun","Priya"))
+print(f"List after adding a name using update: {converted_list}")
+# Checking and removing Jhon
+if "Jhon" in converted_list:
+    converted_list.remove("Jhon")
+print(f"list after removing jhon: {converted_list}")
+#  using discard()
+converted_list.discard("David")
+print(f"list after discarding david: {converted_list}")
+# using loop to display unique name
+for name in converted_list:
+    print(name)
+
+# Course Student Comparison
+
+python_students = {"Asha", "Rahul", "John", "Meera"}
+da_students = {"Rahul", "Meera", "Arun"}
+
+# Students from both courses
+both_courses = python_students.union(da_students)
+# Students learning both courses
+common_students = python_students.intersection(da_students)
+# Students learning only Python
+only_python = python_students.difference(da_students)
+# Students learning only one course
+only_one = python_students.symmetric_difference(only_python)
+# Check if DA is a subset of Python
+is_subset = da_students.issubset(python_students)
+# Check if Python is a superset of DA
+is_superset = python_students.issuperset(da_students)
+# Check if both sets are disjoint
+is_disjoint = python_students.isdisjoint(da_students)
+
+# Display results using loops
+
+print("Students from both courses:")
+for student in both_courses:
+    print(student)
+
+print("\nStudents learning both courses:")
+for student in common_students:
+    print(student)
+
+print("\nStudents learning only Python:")
+for student in only_python:
+    print(student)
+
+print("\nStudents learning only one course:")
+for student in only_one:
+    print(student)
+
+print(f"\nIs DA a subset of Python? {is_subset}")
+print(f"Is Python a superset of DA? {is_superset}")
+print(f"Are Python and DA disjoint? {is_disjoint}")
+
+
+
+

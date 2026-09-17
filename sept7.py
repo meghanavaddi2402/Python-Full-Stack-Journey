@@ -15,7 +15,11 @@ print(users)
 
 for i in range(len(email_ids)):
     users[i+1] = email_ids[i]
-print(users
+print(users)
 '''
+#enumerate => it provides by default counter object(you can store in desired collections)
 users = dict(enumerate(email_ids,1))
 print(users)
+#in python everything is a object
+#function is first class objects
+#a set is an unordered collection as it has nno indexing
